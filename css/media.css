@@ -1,0 +1,262 @@
+
+div.main-container {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+div.main-header .blur{
+  margin-left: -5rem;
+}
+div.main-field__slider{
+  margin-left: 0;
+  justify-content: space-between;
+}
+div.second-container__text_line{
+  height: 10rem;
+  border-left: 0.25rem solid var(--gold-theme-color);
+}
+div.second-container__text{
+  margin-left: 2rem;
+  margin-top: -10rem;
+}
+
+
+@media all and (max-width: 1280px){
+    div.main-container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    div.main-header .blur{
+      margin-left: -1rem;
+    }
+    div.main-header__location{
+      display: none;
+    }
+    div.main-field__slider{
+    }
+    div.second-container__text{
+      margin-left: 2rem;
+      margin-top: -10rem;
+      font-size: 25px;
+    }
+  }
+
+
+  @media all and (max-width: 1024px){
+    div.main-header__text{
+      display: none;
+    }
+    /* div.main-menu{
+  } */
+  div.main-menu{
+    background-image: url(../images/Menu.svg);
+    background-color: tomato;
+    width: 3rem;
+    height: 2rem;
+}
+    div.main-field__text_big{
+      font-size: 50px;
+      line-height: normal;
+    }
+}
+@media all and (max-width: 360){
+div.main-header .blur{
+  position: absolute;
+  background: rgba(12, 12, 12, 0.5);
+  margin-left: 0rem;
+  width: 100%;
+  height: 10rem;
+  filter: blur(5px);
+  z-index: 10;
+}
+div.main-header{
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  justify-content: space-between;
+  align-items: center;
+}
+div.main-header__logo {
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 15;
+}
+div.main-header__logo img{
+  height: 3.5rem;
+}
+div.main-header__text{
+  display: none;
+}
+div.main-header__location{
+  display: none;
+}
+div.main-header__phone{
+  display: none;
+}
+/* .main-header__phone .phone_link{
+  color: var(--white-color);
+  text-decoration: none;
+}
+.main-header__phone .phone_link:hover{
+  text-decoration: underline;
+}
+.main-header__phone .phone{
+  margin-right: 1rem;
+}
+
+.main-header__button{
+  display: flex;
+  z-index: 15;
+  width: 19rem;
+  height: 4.3rem;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--gold-theme-color);
+  background-color: transparent;
+  background-image: none;
+  color: var(--gold-theme-color);
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.main-header__button:hover{
+  cursor: pointer;
+}
+
+
+/* Главное меню */
+
+/* .main-menu{
+  display: flex;
+  margin-top: 3rem;
+}
+.main-menu__home{
+  font-family: 'MullerMedium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+.main-menu__list{
+  width: 55vmax;
+  margin: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+}
+
+
+/* Центр страницы */
+
+
+/* .main-field{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-field__text_big{
+  color: var(--white-color);
+  font-family: 'Bebas Neue';
+  width: 400;
+  font-size: 104px;
+  line-height: 120px;
+}
+
+.main-field__bullets{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main-field__bullets_line{
+  height: 5rem;
+  border-left: 0.25rem solid var(--white-color);
+}
+.main-field__bullets_text{
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--white-color);
+}
+
+.main-field__slider{
+  margin-top: 2rem;
+  display: flex;
+  height: 4.5rem;
+  align-items: center;
+}
+
+.main-field__slider .text{
+  text-transform: uppercase;
+  margin-left: -4rem;
+  color: var(--white-color);
+  word-spacing: 10rem;
+}
+.main-field__slider .text span{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: var(--gold-theme-color);
+}
+
+.main-button{
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  width: 25%;
+  cursor: pointer;
+}
+
+/* Вторая страница */
+
+/* .second-container{
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 12.5rem;
+  padding-right: 12.5rem;
+  height: 100%;
+  background-color: var(--background-gray);
+  background-size: cover;
+}
+
+.second-container__header-text{
+  font-family: 'Bebas Neue';
+  text-transform: uppercase;
+  font-size: 104px;
+  line-height: 114.5%;
+  margin-bottom: 2rem;
+}
+
+.second-container__header-text span{
+  margin-left: 1rem;
+  color: var(--gold-theme-color);
+}
+
+.second-container__text_line{
+  height: 5.5rem;
+  border-left: 0.25rem solid var(--gold-theme-color);
+}
+.second-container__text{
+  margin-left: 2rem;
+  margin-top: -5.5rem;
+  font-family: 'MullerMedium';
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.second-container__dignities{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  height: 15rem;
+}
+
+.employee, .guarantee, .care, .help{
+  display: flex;
+  flex-direction: column;
+}
+
+  }  */
